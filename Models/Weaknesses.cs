@@ -13,7 +13,7 @@ namespace Pokedex.Models
         public Pokemons Pokemon { get; set; } = new();
 
         [Key, Column(Order = 2)]
-        public uint TypesId { get; set; }
+        public uint TypeId { get; set; }
         [ForeignKey("TypeId")]
         public Types Type { get; set; } = new();
     }

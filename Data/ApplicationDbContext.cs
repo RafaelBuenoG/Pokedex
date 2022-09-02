@@ -11,9 +11,9 @@ namespace Pokedex.Data
         }
 
         public DbSet<Abilities> Abilities { get; set; }
-        public Dbset<Gender> Genders { get; set; }
+        public DbSet<Gender> Genders { get; set; }
         public DbSet<Generation> Generations { get; set; }
-        public Dbset<Pokemons> Pokemons { get; set; }
+        public DbSet<Pokemons> Pokemons { get; set; }
         public DbSet<PokemonAbilities> PokemonAbilities { get; set; }
         public DbSet<PokemonTypes> PokemonTypes { get; set; }
         public DbSet<Types> Types { get; set; }
