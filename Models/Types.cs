@@ -20,5 +20,8 @@ namespace Pokedex.Models
         [Required(ErrorMessage = "Por favor, informe a Cor")]
         [StringLength(7, ErrorMessage = "A Cor deve possuir no máximo 7 caracter")]
         public string Cor { get; set; } = string.Empty;
+
+        public ICollection<PokemonTypes> PokemonsOfThisType { get; set; } = new List<PokemonTypes>();
+        public ICollection<Weaknesses> PokemonsWithThisWeaknesses { get; set; } = new List<Weaknesses>();
     }
 }
