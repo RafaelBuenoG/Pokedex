@@ -53,6 +53,10 @@ namespace Pokedex.Models
         [Display(Name = "Imagem")]
         [StringLength(200)]
         public string? Image { get; set; }
+
+        [Display(Name = "Imagem")]
+        [StringLength(200)]
+        public string? AnimatedImg { get; set; }
         public ICollection<PokemonAbilities> Abilities { get; set; } = new List<PokemonAbilities>();
         public ICollection<PokemonTypes> Types { get; set; } = new List<PokemonTypes>();
         public ICollection<Weaknesses> Weaknesses { get; set; } = new List<Weaknesses>();

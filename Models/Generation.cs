@@ -16,9 +16,5 @@ namespace Pokedex.Models
         [StringLength(20, ErrorMessage = "O nome deve possuir no máximo 20 caracteres")]
         public string Name { get; set; } = string.Empty;
 
-        [Display(Name = "Cor de Exibição")]
-        [Required(ErrorMessage = "Por favor, informe a Cor")]
-        [StringLength(1, ErrorMessage = "A Cor deve possuir no máximo 1 caracter")]
-        public string Midia { get; set; } = string.Empty;
     }
 }

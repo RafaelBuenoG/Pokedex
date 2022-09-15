@@ -20,6 +20,14 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["Types"] = _context.Types.ToList();
+        var pokemons = _context.Pokemons
+            .Include(pokemons => pokemons.Types)
+            .ThenInclude(t => t.Type).ToList();
+        return View(pokemons);
+    }
+
+    public IActionResult Details()
+    {
         return View();
     }
 
