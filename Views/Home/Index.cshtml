@@ -7,10 +7,10 @@
 <section class="pt-5 text-center container" style=>
     <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Pokedex</h1>
+            <h1 class="fw-light">Pokédex</h1>
             @foreach (var type in ViewBag.Types)
             {
-                <a href="#" class="btn my-2" style="background-color: rgb(70, 70, 70); color: rgb(202, 79, 81);">
+                <a href="#" class="btn my-2" style="background-color: rgb(40, 40, 40); color: @type.Color">
                     @type.Name
                 </a>
             }
@@ -39,7 +39,7 @@
                                     @foreach (var ptype in pokemon.Types)
                                     {
                                         <a href="#" class="btn btn-sm my-2 text-white"
-                                            style="background-color: rgb(70, 70, 70); color: rgb(202, 79, 81);">
+                                            style="background-color: @ptype.Type.Color">
                                             @ptype.Type.Name
                                         </a>
                                     }

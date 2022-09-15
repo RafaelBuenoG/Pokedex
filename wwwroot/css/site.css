@@ -1,15 +1,15 @@
-/*
+
 .card img
 {
-  background-color: lightgray;
+  background-color: rgb(238, 238, 238);
 }
-*/
+
 
 .card:hover
 {
-  border: 3px solid lightgray;
-  transform: scale(1.15);
-  transition: 1s;
+
+  transform: scale(1.07);
+  transition: 0.5s;
   z-index: 1000;
 }
 
