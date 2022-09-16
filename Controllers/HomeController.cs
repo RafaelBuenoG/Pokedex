@@ -34,7 +34,7 @@ public class HomeController : Controller
             .Include(p => p.Gender).Include(p => p.Generation)
             .Where(p => p.Number == Number).SingleOrDefault();
         var prior = _context.Pokemons.OrderByDescending(p => p.Number)
-            .Where(prior => p.Number < Number).FirstOrDefault();
+            .Where(p => p.Number < Number).FirstOrDefault();
         var next = _context.Pokemons.OrderBy(p => p.Number)
             .Where(p => p.Number > Number).FirstOrDefault();
 
